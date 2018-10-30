@@ -1,6 +1,6 @@
 ---
 title: Notifications
-sidebar_order: 8
+sidebar_order: 1
 ---
 
 Notifications in Sentry come in many flavors, but by default are aimed at Email. Additionally notifications are categorized into two categories:
@@ -78,5 +78,5 @@ The following third-party notifications are available via Sentry extensions:
 -   [Pushover](https://github.com/getsentry/sentry-plugins)
 -   [Whatsapp](https://github.com/ecarreras/sentry-whatsapp)
 -   [XMPP](https://github.com/chroto/sentry-xmpp)
--   [Slack]({%- link _documentation/integrations/slack.md -%})
+-   [Slack]({%- link _documentation/workflow/integrations/slack.md -%})
 -   [Zabbix](https://github.com/m0n5t3r/sentry-zabbix)
