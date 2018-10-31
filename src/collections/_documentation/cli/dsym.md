@@ -1,17 +1,18 @@
 ---
 title: 'dSYM Upload'
+sidebar_order: 4
 ---
 
 `sentry-cli` can upload dSYM files to Sentry to allow symbolication of iOS app crashes. It is also used behind the scenes if you use systems like fastlane or build system integrations.
 
-For general information about dSYM handling, please refer to [Uploading Debug Symbols]({%- link _documentation/clients/cocoa/dsym.md -%}#uploading-dsyms) as well as [_Debug Information Files_]({%- link _documentation/learn/cli/dif.md -%}) for an introduction.
+For general information about dSYM handling, please refer to [Uploading Debug Symbols]({%- link _documentation/clients/cocoa/dsym.md -%}#uploading-dsyms) as well as [_Debug Information Files_]({%- link _documentation/cli/dif.md -%}) for an introduction.
 
 ## Basic Upload
 
 Use `upload-dif` to upload dSYM files and specify the `dsym` type. If invoked during an Xcode build step, `sentry-cli` will automatically pick up the `DWARF_DSYM_FOLDER_PATH` environment variable. Otherwise, provide the path to a dSYM or folder containing dSYMs as command line argument.
 
 {% capture __alert_content -%}
-Because debug files belong to projects, you will need to specify the organization and project you are working with. For more information about this refer to [Working with Projects]({%- link _documentation/learn/cli/configuration.md -%}#sentry-cli-working-with-projects).
+Because debug files belong to projects, you will need to specify the organization and project you are working with. For more information about this refer to [Working with Projects]({%- link _documentation/cli/configuration.md -%}#sentry-cli-working-with-projects).
 {%- endcapture -%}
 {%- include components/alert.html
   title="Note"

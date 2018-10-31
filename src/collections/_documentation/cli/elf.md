@@ -1,5 +1,6 @@
 ---
 title: 'ELF Symbol Upload'
+sidebar_order: 5
 ---
 
 `sentry-cli` can upload ELF symbols generated on various Linux distributions to Sentry to allow symbolication of Linux and Android app crashes. ELF stands for _Executable and Linkable Format_, the file format used for binaries on Linux.
@@ -20,7 +21,7 @@ Shared libraries installed via package managers usually provide their debugging 
 Use `upload-dif` to upload ELF symbols and specify the `elf` type. The command will recurively scan the provided folders or ZIP archives. If you stripped debug information into separate files, pass the `--no-bin` option to skip stripped executables or libraries.
 
 {% capture __alert_content -%}
-Because debug files belong to projects, you will need to specify the organization and project you are working with. For more information about this refer to [Working with Projects]({%- link _documentation/learn/cli/configuration.md -%}#sentry-cli-working-with-projects).
+Because debug files belong to projects, you will need to specify the organization and project you are working with. For more information about this refer to [Working with Projects]({%- link _documentation/cli/configuration.md -%}#sentry-cli-working-with-projects).
 {%- endcapture -%}
 {%- include components/alert.html
   title="Note"

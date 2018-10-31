@@ -96,4 +96,4 @@ To allow Sentry to fully process native crashes and provide you with symbolicate
 
 Note that you need to provide debug information for all libraries that you would like to receive symbolication for. This includes dependencies and operating system libraries. If you are not sure which files are required, go to _Project Settings > Processing Issues_, which shows a list of all required files and instructions to retrieve them.
 
-For more information on uploading debug information and their supported formats, see [Debug Information Files]({%- link _documentation/learn/cli/dif.md -%}#sentry-cli-dif).
+For more information on uploading debug information and their supported formats, see [Debug Information Files]({%- link _documentation/cli/dif.md -%}#sentry-cli-dif).
